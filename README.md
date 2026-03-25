@@ -1,4 +1,5 @@
 We have 3 assets for ETL pipelines in Databricks:
+
 1.**Exploration**: We put the file with exploratory code here to understand raw data before building logic. It is mostly code.
        Examples include: display(df)
                          df.printSchema()
