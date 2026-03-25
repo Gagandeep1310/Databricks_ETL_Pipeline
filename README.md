@@ -14,3 +14,17 @@ We have 3 assets for ETL pipelines in Databricks:
 3. **Utility:** We put helper functions and reusable code here.
    For example: def clean_column_names(df):
                 return df.toDF(*[c.lower().replace(" ", "_") for c in df.columns])
+   
+pipeline/
+│
+├── exploration/
+│   └── explore_data notebook
+│
+├── transformations/
+│   └── clean_data notebook
+│
+├── utility/
+│   └── helpers notebook
+│
+└── data/
+    └── (stored externally, not inside pipeline assets)
